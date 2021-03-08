@@ -1,0 +1,17 @@
+package com.cos.phoneapp.domain;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+// DB에 자동으로 테이블을 만들어줌.
+@Entity
+public class Phone {
+	@Id //PK
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	private String name;
+	private String tel;
+}

@@ -1,0 +1,22 @@
+package com.cos.phoneapp.web;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.cos.phoneapp.web.dto.CMRespDto;
+
+@RestController
+public class PhoneController {
+	
+	// <?>는 리턴할 때 정하겠다는 뜻.
+	@GetMapping("/phone")
+	public CMRespDto<?> findAll() {
+		return null;
+	}
+	
+	@GetMapping("/phone/{id}")
+	public CMRespDto<?> findById(@PathVariable Long id) {
+		return null;
+	}
+}
